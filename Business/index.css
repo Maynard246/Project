@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Rubik:300,300i,400,400i,500,500i,700');
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+body {
+	height: 300vh;
+}
+
+header {
+	overflow: hidden;
+	background: white;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	height: 90px;
+}
+
+header a,
+header label {
+	display: block;
+	padding: 30px;
+	color: hsl(0, 0%, 40%);
+	text-decoration: none;
+	line-height: 20px;
+}
+
+header a:hover {
+	color: #336699;
+	transition: .4s;
+}
+
+header label {
+	float: right;
+	cursor: pointer;
+}
+
+header label:after {
+	content: "\2261";
+	font-size: 1.8em;
+}
+
+.logo {
+	float: left;
+	width: 100px;
+	height: 70px;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+nav {
+	float: right;
+	max-height: 0;
+	width: 100%;
+	transition: 0.3s;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+nav li {
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+
+nav a {
+	padding: 10px;
+	width: 100%;
+}
+
+#nav {
+	display: none;
+}
+
+#nav:checked~nav {
+	max-height: 900px;
+}
+
+nav li:before {
+	visibility: hidden;
+}
+
+.jumbotron img {
+	background-size: cover;
+	width: 100%;
+	text-align: center
+}
+
+.description {
+	border: 1px solid black;
+	margin-top: -30%;
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+}
+
+.description p {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+}
+
+.description h1 {
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	font-size: 80px;
+}
+
+.navbar {
+	overflow: hidden;
+	background: #616A6B;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	max-height: 0;
+	transition: .5s;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	box-shadow: 0 7px 6px -6px rgb(0, 0, 0);
+	border: 1px solid black;
+}
+
+.navbar a,
+.navbar label {
+	display: block;
+	padding: 20px;
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+	line-height: 20px;
+}
+
+.navbar label {
+	float: right;
+	padding: 33px;
+	cursor: pointer;
+}
+
+.navbar label:after {
+	content: "\2261";
+	font-size: 1.8em;
+	padding: 10px;
+}
+
+.logo11 {
+	float: left;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.logo11 img {
+	width: 100px;
+	height: 70px;
+	margin-top: -20px;
+}
+
+.logo img {
+	width: 100px;
+	height: 70px;
+	margin-top: -20px;
+}
+
+.nav-bar {
+	float: right;
+	max-height: 0;
+	width: 100%;
+	transition: 0.3s;
+}
+
+.nav-bar ul {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+.nav-bar li {
+	display: block;
+	text-align: center;
+}
+
+.nav-bar a {
+	padding: 20px;
+	width: 100%;
+}
+
+#nav1 {
+	display: none;
+}
+
+#nav1:checked~.nav-bar {
+	max-height: 900px;
+}
+
+@media only screen and (min-width: 1200px) {
+	header label {
+		display: none;
+	}
+	nav {
+		width: auto;
+		max-height: none;
+	}
+	nav ul {
+		padding: 0;
+		padding-right: 10px;
+	}
+	nav li {
+		display: inline-block;
+		text-align: left;
+	}
+	header nav a {
+		display: inline-block;
+		padding: 15px;
+		width: auto;
+	}
+	nav li:before {
+		content: '';
+		position: absolute;
+		background-color: #336699;
+		height: 3px;
+		width: 0%;
+		bottom: 25px;
+		opacity: 1;
+		overflow: hidden;
+		visibility: visible;
+	}
+	nav li:hover:before {
+		width: 100px;
+		transition: .6s;
+		background-color: white;
+	}
+}
+
+.background img {
+	width: 100%;
+	height: 600px;
+}
+
+.background h1 {
+	margin-top: -350px;
+	margin-left: 22%;
+	color: white;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 50px;
+}
+
+.bgpic {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	margin-top: 20px;
+}
+
+.picture {
+	flex-basis: 30%;
+	text-align: justify;
+	padding-left: 1%;
+	padding-right: 1%;
+	font-family: 'Raleway', sans-serif;
+	overflow: hidden;
+}
+
+.picture img {
+	width: 100%;
+	transition: .5s;
+}
+
+.picture img:hover {
+	transform: scale(1.1);
+}
+
+.picture h1 {
+	text-align: center;
+}
+
+.picture p {
+	font-style: italic;
+}
+
+.picture2 {
+	overflow: hidden;
+	height: 65%;
+}
+
+@media only screen and (max-width: 800px) {
+	.picture {
+		flex-basis: 80%;
+	}
+}
+
+.product {
+	text-align: center;
+	z-index: 5;
+	margin-top: 300px;
+}
+
+.product h1 {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+.about {
+	margin-top: 30px;
+	background-color: #616A6B;
+	height: 17%;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+.about h1 {
+	padding-top: 30px;
+}
+
+.about p {
+	padding-top: 30px;
+}
+
+iframe {
+	width: 100%;
+}
+
+.footer {
+	margin: 0%;
+	height: 300px;
+	width: 100%;
+	text-align: center;
+	background-color: #616A6B;
+}
+
+.footer h1 {
+	padding-top: 40px;
+	font-family: 'Jura', sans-serif;
+	color: white;
+}
+
+.footer p {
+	font-family: 'Jura', sans-serif;
+	color: white;
+}
+
+.media {
+	display: flex;
+	padding-left: 40%;
+	flex-flow: row wrap;
+}
+
+.iconic {
+	margin-left: 3%;
+	flex-basis: 1%;
+	text-align: justify;
+	margin-top: 20px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.iconic img {
+	width: 40px;
+	color: white;
+	margin-top: 10px;
+}
+
+.iconic img:hover {
+	transform: scale(1.1)
+}
+
+.allright {
+	margin-top: 70px;
+	flex-flow: column;
+	display: flex;
+	text-align: center;
+	margin-left: -290px;
+	margin-right: -290px;
+}
