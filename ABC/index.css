@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Rubik:300,300i,400,400i,500,500i,700');
+* {
+	margin: 0%;
+	padding: 0%;
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 300vh;
+	color: black;
+}
+
+/*Header*/
+
+header {
+	overflow: hidden;
+	background: white;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	transition: 1s;
+}
+
+header a,
+header label {
+	display: block;
+	padding: 30px;
+	color: hsl(0, 0%, 40%);
+	text-decoration: none;
+	line-height: 20px;
+}
+
+header a:hover {
+	color: #336699;
+	transition: .4s;
+}
+
+header label {
+	float: right;
+	cursor: pointer;
+}
+
+header label:after {
+	content: "\2261";
+	font-size: 1.8em;
+}
+
+.logo {
+	float: left;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	font-size: 1.8em;
+	color: #336699;
+}
+
+.logo img {
+	margin-top: -28px;
+	height: 85px;
+	width: 85px;
+	position: absolute;
+}
+
+nav {
+	float: right;
+	max-height: 0;
+	width: 100%;
+	transition: 0.3s;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+nav li {
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+
+nav a {
+	padding: 10px;
+	width: 100%;
+	color: white;
+	font-size: 25px;
+}
+
+#nav {
+	display: none;
+}
+
+#nav:checked~nav {
+	max-height: 900px;
+}
+
+nav li:before {
+	visibility: hidden;
+}
+
+.navbar {
+	overflow: hidden;
+	background: #191c1f;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	max-height: 0;
+	transition: .5s;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	box-shadow: 0 7px 6px -6px rgb(0, 0, 0);
+}
+
+.navbar a,
+.navbar label {
+	display: block;
+	padding: 20px;
+	color: hsl(0, 0%, 100%);
+	text-decoration: none;
+	line-height: 20px;
+}
+
+.navbar label {
+	float: right;
+	padding: 33px;
+	cursor: pointer;
+}
+
+.navbar label:after {
+	content: "\2261";
+	font-size: 1.8em;
+	padding: 10px;
+}
+
+.logo11 {
+	float: left;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.logo11 img {
+	margin-top: -26px;
+	height: 95px;
+	width: 95px;
+	position: absolute;
+}
+
+.nav-bar {
+	float: right;
+	max-height: 0;
+	width: 100%;
+	transition: 0.3s;
+}
+
+.nav-bar ul {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+.nav-bar li {
+	display: block;
+	text-align: center;
+}
+
+.nav-bar a {
+	padding: 20px;
+	width: 100%;
+}
+
+#nav1 {
+	display: none;
+}
+
+#nav1:checked~.nav-bar {
+	max-height: 900px;
+}
+
+@media only screen and (min-width: 1200px) {
+	header label {
+		display: none;
+	}
+	nav {
+		width: auto;
+		max-height: none;
+	}
+	nav ul {
+		padding: 0;
+		padding-right: 10px;
+	}
+	nav li {
+		display: inline-block;
+		text-align: left;
+	}
+	header nav a {
+		display: inline-block;
+		padding: 15px;
+		width: auto;
+	}
+	nav li:before {
+		content: '';
+		position: absolute;
+		background-color: #336699;
+		height: 3px;
+		width: 0%;
+		bottom: 25px;
+		opacity: 1;
+		overflow: hidden;
+		visibility: visible;
+	}
+	nav li:hover:before {
+		width: 100px;
+		transition: .6s;
+		background-color: white;
+	}
+}
+
+.header {
+	background-image: url('photo/aqua-home.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 35%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.header h1 {
+	padding-top: 24%;
+	font-size: 70px;
+	color: white;
+}
+
+/*Body*/
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.overlay {
+	padding-top: 500px;
+}
+
+
+/*log in*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+	width: 100%;
+	padding: 14px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+	background-color: #336699;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+	margin-left: -380px;
+	margin-right: -500px;
+}
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+.container {
+	padding: 16px;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button (x) */
+
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+	from {
+		-webkit-transform: scale(0)
+	}
+	to {
+		-webkit-transform: scale(1)
+	}
+}
+
+@keyframes animatezoom {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(1)
+	}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
+.head {
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+.head h1 {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 50px;
+}
+
+.extra {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	font-family: 'Rajdhani', sans-serif;
+	margin-top: 50px;
+}
+
+.extra h1 {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 20px;
+}
+
+.extra img {
+	width: 50px;
+	height: 50px;
+}
+
+.location {
+	margin-top: 25px;
+}
+
+.helipad {
+	margin-top: 25px;
+}
+
+.plane {
+	margin-top: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+	.image {
+		flex-basis: 80%;
+	}
+}
+
+.bgpic {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	margin-top: 20px;
+}
+
+.div {
+	flex-basis: 30%;
+	text-align: justify;
+	padding-left: 1%;
+	padding-right: 1%;
+	font-family: 'Raleway', sans-serif;
+	overflow: hidden;
+}
+
+.div img {
+	width: 100%;
+	transition: .5s;
+}
+
+.div img:hover {
+	transform: scale(1.1);
+}
+
+.div h1 {
+	text-align: center;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.picture {
+	overflow: hidden;
+	height: 89%;
+	border-radius: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+	.div {
+		flex-basis: 80%;
+	}
+}
+
+iframe {
+	width: 100%;
+	margin-top: 3%;
+}
+
+/*Footer*/
+
+.footer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	border: 1px solid black;
+	height: 100px;
+	background-color: #191c1f;
+	margin: 0%;
+}
+
+.icon img {
+	width: 50px;
+	margin: 20px 40px;
+}

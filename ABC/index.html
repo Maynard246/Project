@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+   <title></title>
+   <head>
+      <!-- Local css -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script type="text/javascript" src='index.js'></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="index.css">
+      <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+   </head>
+   <body>
+      <div class="navbar">
+         <a class="logo11"><img src="photo/download.png"></a>
+         <input id="nav1" type="checkbox">
+         <label for="nav1"></label>
+         <div class="nav-bar">
+            <ul>
+               <li><a href="#">HOME</a></li>
+               <li><a href="#">SERVICES</a></li>
+               <li><a href="#">PORTFOLIO</a></li>
+               <li><a href="#">ABOUT</a></li>
+               <li><a href="#">CONTACT</a></li>
+            </ul>
+         </div>
+      </div>
+      <header>
+         <a class="logo"><img src="photo/download.png"></a>
+         <input id="nav" type="checkbox">
+         <label for="nav"></label> 
+         <nav>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Book</a></li>
+               <li><a href="#">What We Offer</a></li>
+               <li><a href="#">Venue</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+         </nav>
+      </header>
+      <div class="header">
+         <h1>Enjoy Your Self Here!</h1>
+         <div class="overlay">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log Now!</button>
+            <div id="id01" class="modal">
+               <form class="modal-content animate" action="/action_page.php">
+                  <div class="imgcontainer">
+                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                     <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                  </div>
+                  <div class="container">
+                     <label for="uname"><b>Username</b></label>
+                     <input type="text" placeholder="Enter Username" name="uname" required maxlength="20">
+                     <label for="psw"><b>Password</b></label>
+                     <input type="password" placeholder="Enter Password" name="psw" required maxlength="20">
+                     <button type="submit">Login</button>
+                     <label>
+                     <input type="checkbox" checked="checked" name="remember"> Remember me
+                     </label>
+                  </div>
+                  <div class="container" style="background-color:#f1f1f1">
+                     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                     <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="head">
+         <h1>Extra</h1>
+      </div>
+      <div class="extra">
+         <div class="image">
+            <img src="photo/car.png">
+            <h1>COMPLIMENTARY<br>SHUTTLE SERVICE</h1>
+            <br>
+            <p>All in-house guests may use<br> ABC Hotel’s free pick-up and<br> drop off service to selected<br> locations around Angeles City.</p>
+            <br>
+            <p>VIP Transfers Available</p>
+         </div>
+         <div class="image">
+            <img src="photo/network.png">
+            <h1>HIGH-SPEED<br>INTERNET</h1>
+            <br>
+            <p>ABC Hotel boasts of having the<br> fastest dedicated - and fully<br> redundant - fiber optic Internet<br> connection in the region.</p>
+            <br>
+         </div>
+         <div class="image">
+            <img src="photo/location.png">
+            <h1>CENTRAL LOCATION</h1>
+            <br>
+            <p class="location">The ABC entertainment resort is<br> located in the heart of the<br> entertainment strip of Angeles<br> City, at the entrance of Clark<br> Freeport, 10 minutes from Clark<br> Airport and across the road<br> from SM Shopping Mall.</p>
+            <br>
+         </div>
+         <div class="image">
+            <img src="photo/copter.png">
+            <h1>HELIPAD</h1>
+            <br>
+            <p class="helipad">Guests travelling by helicopter<br> may make free use of our roof<br> deck helipad between 11am<br> and 4pm.</p>
+            <br>
+         </div>
+         <div class="image">
+            <img src="photo/plane.png">
+            <h1>TRAVEL CENTER</h1>
+            <br>
+            <p class="plane">Our in-house travel agent can<br> organize and arrange all your<br> travel needs.</p>
+            <br>
+         </div>
+      </div>
+      <div class="bgpic">
+         <div class="div">
+            <div class="picture">
+               <img src="photo/swimmingbar.jpg">
+            </div>
+            <h1>Pool Bar</h1>
+         </div>
+         <div class="div">
+            <div class="picture">
+               <img src="photo/caption.jpg">
+            </div>
+            <h1>ABC Chopper</h1>
+         </div>
+         <div class="div">
+            <div class="picture">
+               <img src="photo/nard.jpg">
+            </div>
+            <h1>Room</h1>
+         </div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.860459419048!2d120.57944631432638!3d15.166006167037217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f278e242ffe3%3A0x4ef4a488267c944!2sABC+Hotel!5e0!3m2!1sen!2sph!4v1540349970489" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="footer">
+         <div class="icon">
+            <a href="https://www.facebook.com/"><img src="photo/facebook.png"></a>
+         </div>
+         <div class="icon">
+            <a href="https://www.instagram.com/"><img src="photo/instagram.png"></a>
+         </div>
+         <div class="icon">
+            <a href="#"><img src="photo/aaaaaa.png"></a>
+         </div>
+         <div class="icon">
+            <a href="https://www.twitter.com/"> <img src="photo/twitter.png"></a>
+         </div>
+         <div class="icon">
+            <a href="https://www.youtube.com/"><img src="photo/youtube.png"></a>
+         </div>
+      </div>
+   </body>
+</html>
