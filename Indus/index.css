@@ -1,0 +1,389 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Header*/
+.blackhead {
+	width: 100%;
+	height: 20px;
+	background-color: rgb(0, 0, 0);
+}
+
+.headnav {
+	background-color: rgb(242, 187, 6);
+	width: 100%;
+	height: 100px;
+}
+
+.headnav img {
+	margin-right: auto;
+	margin-top: 20px;
+	margin-left: 100px;
+}
+
+.headnav ul {
+	display: flex;
+	flex-flow: row wrap;
+	list-style: none;
+}
+
+.headnav li {
+	padding-right: 90px;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+.headnav li:nth-child(2n):before {
+	content: "\2706";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.headnav li:nth-child(3n):before {
+	content: "\2709";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+header {
+	overflow: hidden;
+	background: black;
+	z-index: 1;
+	width: 100%;
+	transition: 1s;
+}
+
+ul a {
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header a,
+header label {
+	display: block;
+	padding: 30px;
+	color: hsl(0, 0%, 40%);
+	text-decoration: none;
+	line-height: 20px;
+}
+
+header a:hover {
+	color: rgb(242, 187, 6);
+	transition: .4s;
+}
+
+header label {
+	float: right;
+	cursor: pointer;
+}
+
+header label:after {
+	content: "\2630";
+	font-size: 1.8em;
+	color: white;
+	margin-right: 60px;
+}
+
+nav {
+	float: right;
+	max-height: 0;
+	width: 100%;
+	transition: 0.3s;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+nav li {
+	display: block;
+	text-align: center;
+	padding: 13px;
+	margin-right: 36px;
+	padding-right: 22px;
+}
+
+nav a {
+	padding: 10px;
+	width: 100%;
+	color: white;
+	font-size: 14px;
+}
+
+nav a:active {
+	color: aliceblue;
+}
+
+#nav {
+	display: none;
+}
+
+#nav:checked~nav {
+	max-height: 1500px;
+}
+
+nav li:before {
+	visibility: hidden;
+}
+
+#nav1 {
+	display: none;
+}
+
+/*Body*/
+.bgimg img {
+	width: 100%;
+}
+
+.bgimg h1 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: rgb(253, 253, 253);
+	font-size: 45px;
+	margin-top: -25%;
+	margin-left: 6%;
+	position: absolute;
+}
+
+.bgcolor {
+	margin-top: -5px;
+	background-color: black;
+	width: 100%;
+	padding-bottom: 6.5%;
+}
+
+.bgcolor h1 {
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(242, 187, 6);
+	text-align: center;
+	padding-top: 50px;
+}
+
+.textbg {
+	background-color: rgb(10, 9, 9);
+	width: 99%;
+	height: 40%;
+	border: 1px solid black;
+}
+
+.company {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0px 20px;
+
+}
+
+.plat {
+	transition: 1s;
+	height: 200px;
+	width: 350px;
+	padding-top: -20px;
+	text-align: center;
+}
+
+.plat h1 {
+	margin-top: -50px;
+	text-align: center;
+}
+
+.plat p {
+	text-align: justify;
+	padding: 0px 40px;
+	color: aliceblue;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.plat:nth-child(1):before {
+	content: '\1F30C';
+	color: rgb(134, 5, 5);
+	font-size: 80px;
+	margin-left: 5px;
+}
+
+.plat:nth-child(2):before {
+	content: '\26E8';
+	color: rgb(144, 10, 10);
+	font-size: 80px;
+	margin-left: 5px;
+}
+
+.plat:nth-child(3):before {
+	content: '\20AA';
+	color: rgb(134, 5, 5);
+	font-size: 93px;
+	margin-left: 5px;
+}
+
+.plat:nth-child(4):before {
+	content: '\2623';
+	color: rgb(134, 5, 5);
+	font-size: 80px;
+	margin-left: 5px;
+}
+
+.images {
+	background-color: white;
+	width: 100%;
+	background-color: rgb(242, 187, 6);
+}
+
+.images h1 {
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	text-align: center;
+	padding-top: 40px;
+	font-weight: bolder;
+}
+
+.images p {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.images2 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding-top: 40px;
+}
+
+.image {
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	margin-left: 25px;
+	margin-right: 18px;
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+}
+
+.image img:hover {
+	transition: 2s;
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.imagetext {
+	width: 200;
+	height: 500px;
+}
+
+.imagetext h1 {
+	padding: 0px 0px;
+	font-size: 29px;
+	text-align: center;
+}
+
+.imagetext h2 {
+	margin-top: 20px;
+	text-align: center;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: red
+}
+
+.imagetext p {
+	text-align: center;
+	padding: 0px 20px;
+}
+
+.map {
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.map h1 {
+	padding-top: 40px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(242, 187, 6);
+}
+
+.map img {
+	padding-top: 40px;
+	width: 70%;
+}
+
+/*Footer*/
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(242, 187, 6);
+}
+
+footer h5 {
+	color: black;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-align: center;
+	padding-top: 40px;
+	font-size: 25px;
+}
+
+.blackfoot {
+	width: 100%;
+	height: 20px;
+	background-color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 1000px) {
+	.headnav li:nth-child(2n) {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	header {
+		background: rgba(0, 0, 0);
+	}
+	header label {
+		display: none;
+	}
+	nav {
+		width: auto;
+		max-height: none;
+	}
+	nav ul {
+		padding: 0;
+		padding-right: 10px;
+	}
+	nav li {
+		display: inline-block;
+		text-align: left;
+	}
+	header nav a {
+		display: inline-block;
+		padding: 15px;
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	.headnav li:nth-child(3n) {
+		display: none;
+	}
+	.headnav img {
+		position: absolute;
+		left: 140px;
+	}
+	header label:after {
+		margin-right: 0px;
+	}
+	.bgimg h1 {
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		color: rgb(254, 252, 252);
+		font-size: 45px;
+		text-align: center;
+		margin-top: -20%;
+	}
+	.plat {
+		flex-basis: 100%;
+	}
+}
