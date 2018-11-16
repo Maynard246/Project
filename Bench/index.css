@@ -1,0 +1,308 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+.background {
+	width: 100%;
+}
+
+.background img {
+	width: 100%;
+}
+
+.header {
+	overflow: hidden;
+	background: black;
+	z-index: 1;
+	width: 100%;
+	transition: 1s;
+	margin-top: -5px;
+}
+
+ul a {
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header a,
+.header label {
+	display: block;
+	padding: 30px;
+	color: hsl(0, 100%, 99%);
+	text-decoration: none;
+	line-height: 20px;
+}
+
+.header a:hover {
+	color: rgb(172, 10, 10);
+	transition: .4s;
+}
+
+.header label {
+	float: right;
+	cursor: pointer;
+}
+
+.header label:after {
+	content: "\2630";
+	font-size: 1.8em;
+	color: white;
+	margin-right: 60px;
+}
+
+nav {
+	float: right;
+	max-height: 0;
+	width: 100%;
+	transition: 0.3s;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+nav li {
+	display: block;
+	text-align: center;
+	padding: 13px;
+	margin-right: 38px;
+	padding-right: 22px;
+}
+
+nav a {
+	padding: 10px;
+	width: 100%;
+	color: white;
+	font-size: 14px;
+}
+
+nav a:active {
+	color: aliceblue;
+}
+
+#nav {
+	display: none;
+}
+
+#nav:checked~nav {
+	max-height: 1500px;
+}
+
+nav li:before {
+	visibility: hidden;
+}
+
+.text {
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	background-color: rgb(253, 253, 253);
+}
+
+.text h1 {
+	padding: 30px;
+}
+
+.changing {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.change {
+	width: 88.6%;
+	justify-content: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+#library {
+	background-image: url(photos/pic1.jpg);
+	width: 270px;
+	height: 270px;
+	transition: background 0.5s ease-in-out;
+}
+
+#library:hover {
+	background-image: url(photos/picture1.jpg);
+	width: 270px;
+	height: 270px;
+	cursor: pointer;
+}
+
+#library2 {
+	background-image: url(photos/pic2.jpg);
+	width: 270px;
+	height: 270px;
+	transition: background 0.25s ease-in-out;
+}
+
+#library2:hover {
+	background-image: url(photos/picture2.jpg);
+	width: 270px;
+	height: 270px;
+	cursor: pointer;
+}
+
+#library3 {
+	background-image: url(photos/pic3.jpg);
+	width: 270px;
+	height: 270px;
+	transition: background 0.25s ease-in-out;
+}
+
+#library3:hover {
+	background-image: url(photos/picture3.jpg);
+	width: 270px;
+	height: 270px;
+	cursor: pointer;
+}
+
+#library4 {
+	background-image: url(photos/pic4.jpg);
+	width: 270px;
+	height: 270px;
+	transition: background 0.25s ease-in-out;
+}
+
+#library4:hover {
+	background-image: url(photos/picture4.jpg);
+	width: 270px;
+	height: 270px;
+	cursor: pointer;
+}
+
+.history {
+	width: 100%;
+	background-color: black;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.history h1 {
+	color: beige;
+	padding: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.history p {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 40px;
+}
+
+.location {
+	text-align: center;
+	width: 100%;
+	background-color: rgb(172, 10, 10);
+}
+
+.location h1 {
+	font-family: 'Open Sans', sans-serif;
+	padding: 40px;
+}
+
+iframe {
+	width: 90%;
+	padding-bottom: 50px;
+}
+
+.text2 {
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	background-color: rgb(2, 2, 2);
+	padding-bottom: 40px;
+}
+
+.text2 h1 {
+	padding: 30px;
+	color: white;
+}
+
+.changing2 {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.change2 {
+	width: 88.6%;
+	justify-content: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.library {
+	width: 270px;
+	height: 270px;
+	overflow: hidden;
+}
+
+.library img {
+	width: 100%;
+	transition: 1s
+}
+
+.library img:hover {
+	transform: scale(1.2)
+}
+
+footer {
+	width: 100%;
+	background-color: rgb(172, 10, 10)
+}
+
+footer h1 {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	border-top: 2px solid white;
+	padding: 20px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 1500px) {
+	.header {
+		background: rgba(0, 0, 0);
+	}
+	.header label {
+		display: none;
+	}
+	nav {
+		width: auto;
+		max-height: none;
+	}
+	nav ul {
+		padding: 0;
+		padding-right: 10px;
+	}
+	nav li {
+		display: inline-block;
+		text-align: left;
+	}
+	.header nav a {
+		display: inline-block;
+		padding: 15px;
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	.library {
+		flex-basis: 100%;
+	}
+	.change {
+		display: flex;
+		justify-content: center;
+	}
+}
