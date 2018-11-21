@@ -1,0 +1,235 @@
+body {
+	margin: 0%;
+	padding: 0%;
+}
+
+/*Header*/
+.header {
+	position: fixed;
+}
+
+/*Body*/
+.bodybackground {
+	background-image: url('photos/1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 700px;
+	overflow: hidden;
+}
+
+.bodybackground h1 {
+	padding-top: 8%;
+	font-size: 60px;
+	color: rgb(228, 75, 58);
+	opacity: 5;
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: bolder;
+}
+
+e {
+	color: white;
+}
+
+.ground ul {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 050px 50px;
+	margin-right: 100px;
+}
+
+.ground li {
+	list-style: none;
+}
+
+.ground li img {
+	width: 50px;
+}
+
+.ground ul img:first-child {
+	margin-right: auto;
+	margin-left: 0px;
+}
+
+.featered {
+	border: 1px solid black;
+}
+
+.featered h1 {
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.under {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.undertext {
+	width: 38%;
+}
+
+.undertext:first-child:before {
+	content: "\265D";
+}
+
+.undertext:last-child:before {
+	content: "\1F3C6";
+}
+
+.undertext h1 {
+	font-size: 20px;
+	text-align: center;
+	transition: 2s;
+	color: black;
+}
+
+.undertext p {
+	font-size: 13px;
+	text-align: center;
+}
+
+.under2 {
+	margin-top: 30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.undertext2 {
+	width: 38%;
+}
+
+.undertext2:first-child:before {
+	content: "\03A9";
+}
+
+.undertext2:last-child:before {
+	content: "\26C5";
+}
+
+.undertext2 h1 {
+	font-size: 20px;
+	text-align: center;
+	transition: 2s;
+}
+
+.undertext2 p {
+	font-size: 15px;
+	text-align: center;
+}
+
+.bodybackground2 {
+	background-image: url('photos/2.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 370px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.bodybackground2 h1 {
+	padding-top: 5%;
+	font-size: 40px;
+	color: rgb(255, 255, 255);
+	opacity: 5;
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: bolder;
+}
+
+.bodybackground2 p {
+	color: white;
+	margin-top: 100px;
+}
+
+.bodybackground2 img {
+	width: 60px;
+	position: absolute;
+	left: 47.5%;
+}
+
+.map h1 {
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+	margin-top: 50px;
+}
+
+.map2 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+iframe {
+	width: 600px;
+	height: 320px;
+}
+
+input {
+	width: 620px;
+	height: 50px;
+	border: 1px solid rgb(56, 54, 54);
+	border-radius: 12px;
+}
+
+.submit {
+	width: 620px;
+	height: 50px;
+	color: black;
+	background-color: rgb(228, 75, 58);
+}
+
+.comment {
+	height: 100px;
+}
+
+/*Footer*/
+.footer {
+	width: 100%;
+	height: 50%;
+	background-color: rgb(196, 181, 181);
+}
+
+.footer ul {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 50px 50px;
+	margin-right: 100px;
+	justify-content: center;
+}
+
+.footer li {
+	list-style: none;
+}
+
+.footer li img {
+	width: 50px;
+	padding-top: 50px;
+}
+
+.footer h1 {
+	font-size: 15px;
+	color: rgb(228, 75, 58);
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+	margin-top: -20px;
+	padding-top: -20px;
+	padding-bottom: 30px;
+}
+
+/*media query*/
+@media only screen and (max-width: 850px) {
+	.undertext {
+		flex-basis: 78%;
+	}
+	.undertext2 {
+		flex-basis: 78%;
+	}
+	.under2 {
+		margin-top: 0%;
+	}
+}
